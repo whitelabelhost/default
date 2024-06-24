@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Admin-Host</title>
+    <link rel="icon" href="https://admin-host.com/favicon.png" />
+    <meta name="title" content="Admin-Host">
+    <meta name="description" content="Powerful white-label hosting for administrators">
+    <meta name="theme-color" content="#00FA84">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#00FA84">
+    <meta name="msapplication-navbutton-color" content="#00FA84">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://admin-host.com/">
+    <meta property="og:title" content="Admin-Host">
+    <meta property="og:description" content="Powerful white-label hosting for administrators">
+    <meta property="og:image" content="https://admin-host.com/banner.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://admin-host.com/">
+    <meta property="twitter:title" content="Admin-Host">
+    <meta property="twitter:description" content="Powerful white-label hosting for administrators">
+    <meta property="twitter:image" content="https://admin-host.com/banner.png">
+    <meta name="description" content="Powerful white-label hosting for administrators">
+    <style>
+        @font-face {
+            font-family: Plus Jakarta Sans;
+            src: url(PlusJakartaSans.ttf);
+        }
+
+        body {
+            font-family: "Plus Jakarta Sans", sans-serif;
+            background-color: #000000;
+            color: #FFFFFF;
+            padding: 0 min(150px, 10vw);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-center;
+            gap: 40px;
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        *,
+        *::before,
+        *::after {
+            font-family: "Plus Jakarta Sans";
+            color: #FFFFFF;
+            margin: 0;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 20px;
+            width: max-content;
+            max-width: 100%;
+        }
+
+        img {
+            height: 27px;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 500;
+            line-height: 32px;
+        }
+
+        h4 {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 32px;
+        }
+
+        button {
+            display: flex;
+            padding: 3px;
+            justify-content: flex-start;
+            align-self: stretch;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(90.87deg, #00FA84 0%, #00555C 100%);
+            cursor: pointer;
+            width: 110%;
+
+            >* {
+                padding: 10px 20px;
+                border-radius: 7.5px;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 32px;
+                text-align: left;
+                flex: 1 0 0;
+                position: relative;
+                z-index: 1;
+            }
+
+            >*::before {
+                content: " ";
+                background: #000000;
+                border-radius: 8px;
+                width: 90%;
+                height: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -1;
+                transition: 1s ease-in-out;
+            }
+
+            >*::after {
+                content: "A-H";
+                font-size: 13px;
+                color: #FFFFFF;
+                border-radius: 8px;
+                width: 26px;
+                height: 100%;
+                position: absolute;
+                right: 4%;
+                top: 0;
+                rotate: 90deg;
+                z-index: -2;
+            }
+        }
+
+        button:hover>*::before {
+            width: 99.85%;
+            transition: 0.5s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="title.png" />
+        <h2>Powerful White-label<br>
+            Hosting For Administrators</h2>
+    </div>
+    <div>
+        <h4>Admin-Host.com is currently <strong>invite-only</strong>.</h4>
+        <button>
+            <h5>Community Forum</h5>
+        </button>
+    </div>
+</body>
+
+</html>
