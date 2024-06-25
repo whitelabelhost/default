@@ -1,0 +1,109 @@
+@font-face {
+	font-family: Plus Jakarta Sans;
+	src: url(PlusJakartaSans.ttf);
+}
+
+body {
+	font-family: "Plus Jakarta Sans", sans-serif;
+	background-color: #000000;
+	color: #ffffff;
+	padding: 0 min(150px, 10vw);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 40px;
+	margin: 0;
+	min-height: 100vh;
+}
+
+*,
+*::before,
+*::after {
+	font-family: "Plus Jakarta Sans";
+	color: #ffffff;
+	margin: 0;
+}
+
+div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 20px;
+	width: max-content;
+	max-width: min(90%, 700px);
+}
+
+img {
+	height: 27px;
+}
+
+h2 {
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 32px;
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 32px;
+}
+
+button {
+	display: flex;
+	padding: 3px;
+	justify-content: flex-start;
+	align-self: stretch;
+	border: none;
+	border-radius: 10px;
+	background: linear-gradient(90.87deg, #00fa84 0%, #00555c 100%);
+	cursor: pointer;
+	width: 110%;
+
+	> * {
+		padding: 10px 20px;
+		border-radius: 7.5px;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 32px;
+		text-align: left;
+		flex: 1 0 0;
+		position: relative;
+		z-index: 1;
+	}
+
+	> *::before {
+		content: " ";
+		background: #000000;
+		border-radius: 8px;
+		width: 90%;
+		min-width: calc(100% - 50px);
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: -1;
+		transition: 1s ease-in-out;
+	}
+
+	> *::after {
+		content: "A-H";
+		font-size: 13px;
+		color: #ffffff;
+		border-radius: 8px;
+		width: 26px;
+		height: 100%;
+		position: absolute;
+		right: min(22px, 4%);
+		top: 0;
+		rotate: 90deg;
+		z-index: -2;
+	}
+}
+
+button:hover > *::before {
+	width: 99.85%;
+	transition: 1s ease-in-out;
+}
