@@ -51,6 +51,11 @@ h4 {
 	line-height: 32px;
 }
 
+a {
+    text-decoration: none;
+    width: 100%;
+}
+
 button {
 	display: flex;
 	padding: 3px;
